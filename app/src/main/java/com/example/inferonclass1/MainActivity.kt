@@ -27,6 +27,21 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val image2 = findViewById<ImageView>(R.id.btsImage2)
+        val image3 = findViewById<ImageView>(R.id.btsImage3)
+        image2.setOnClickListener {
+            Toast.makeText(this, "2번 클릭 완료", Toast.LENGTH_LONG).show()
+
+            val intent = Intent(this, Bts2Activity::class.java)
+            startActivity(intent)
+        }
+
+        image3.setOnClickListener {
+            Toast.makeText(this, "3번 클릭 완료", Toast.LENGTH_LONG).show()
+
+            val intent = Intent(this, Bts3Activity::class.java)
+            startActivity(intent)
+        }
 
     }
 }
